@@ -28,7 +28,7 @@
 \usepackage{booktabs}
 \usepackage{ccicons}
 \usepackage{todonotes}
-
+\usepackage{csquotes}
 \usepackage[utf8]{inputenc}
 
 % llt: Define a global style for URLs, rather that the default one
@@ -106,40 +106,183 @@ In this article we analyze a real-world Computer-Supported Collaborative Work (C
 
 The field of CSCW is a relatively new area of research in the greater area of computer science research. From its beginning, in the late 80s, the field has produced both academic research into the fundamental concepts of the area, as well as tools derived from this research, specifically designed to support collaborative work.
 
-With the advance of the availability, ubiquity and reach of the Internet in the last 15 years, vast opportunities to use on-line tools to perform collaborative have appeared, and the number of tools created to support distributed, synchronous or asynchronous work, through the Internet, has seen a sharp rise. There is even a strong presence of tools being developed in Brazil for these purposes, adapted to the local and national needs and requirements.
+With the advance of the availability, ubiquity and reach of the Internet in the last 15 years, vast opportunities to use on-line tools to perform collaborative have appeared, and the number of tools created to support distributed, synchronous or asynchronous work, through the Internet, has seen a sharp rise. There is even a strong presence of tools being developed in Brazil for these purposes, adapted to the local and national needs and requirements[CITATION NEEDED: what needs? Who says?].
 
-One of theses systems is the new portal for Public Free Software ("Software Público Brasileiro – SPB"), being developed by the University of Brasília (UnB), which goal is to support the activities of software development in the public sector and encourage the collaboration between communities and individuals.
+One of theses systems is the new portal for Public Free Software (``Software Público Brasileiro – SPB''), being developed by the University of Brasília (UnB), which goal is to support the activities of software development in the public sector and encourage the collaboration between communities and individuals.
 
-The new version of the Portal (nSPB) is currently in final tests phase (beta) and when released it will replace the old version (oSPB), on-line since 2007. The nSPB was completely redesigned with focusing on the integration of coding and social features. This paper compares both versions to better understand the benefits and drawbacks of this integration and measure Information System Success \cite{Crowston2006}.
+The new version of the Portal (nSPB) is currently in final tests phase (beta) and when released it will replace the old version (oSPB), on-line since 2007. The nSPB was completely redesigned with focusing on the integration of coding and social features. This paper compares both versions to better understand the benefits and drawbacks of this integration regarding Open-Source Information System Success \cite{Crowston2006}, Perceived Group Awareness (PGA) \cite{Strijbos2007} and Perceived Group Performance (PGP)\cite{Jung2002}.
+
+\section{Portal do Software Público}
+
+[EXPLAIN FEATURES OF SOFTWARE PUBLICO AND WHAT ARE THE INTRODUCED SOCIAL FEATURES]
 
 \section{The Relation between Social Interaction and FLOSS Success}
 
-As any software FLOSS projects can be developed and a single individual or in a closed group (as proprietary software) but most of it is actually developed by organizationally- and geographically-distributed developers \cite{Crowston2012}, and thus it requires level of social interaction.
+As any software FLOSS projects can be developed by a single individual or by a closed group (as proprietary software) but most of it is actually developed by organizationally- and geographically-distributed developers \cite{Crowston2012}, and thus it requires social interaction.
 
-While social interaction can help teams to achieve higher level of awareness improving teamwork [CITATION NEEDED:AULA 3 CSCW] its also important to consider that this interaction can diverge developers from taskwork [CITATION NEEDED:AULA 3 CSCW].
+While social interaction can help teams to achieve higher level of awareness, an ``important feature'' for collaborative work \cite{Olson2000}, we also have to consider that social "distractions" can diverge users from taskwork, that is, from the task they should finally accomplish.
 
-To understand both taskwork and teamwork we use metrics from information system success, one of the most widely used dependent variables in information system (IS) research \cite{Crowston2006}, adapted to Open-Source by Crowston in 2006.
+In our study we chose to use \textit{activity} and \textit{programmer productivity} indicators brought from Information Systems (IS) to FLOSS research \cite{Crowston2006}, as follow:
 
-TODO: Introduce: Development of Stable processes[CITATION NEEDED: FORTES E REIS], Developer productivitys[CITATION NEEDED], Task Completions[CITATION NEEDED], Developer Attraction and Retentions[CITATION NEEDED].
- 
-TODO: Introduce: PGA[CITATION NEEDED:AULA 4 CSCW]
+\textit{\textbf{Activity}}: number of topics, messages and authors in forum; number of authors in code repositories; number of authors and modifications (tracker).
+
+\textit{\textbf{Programmer Productivity}}: commits and lines of code in repository; completed tasks on issue tracker.
+
+
+Allied to the quantitative data surveys were also filled and returned by users. The combined use of quantitative and qualitative methods allowed us to measure team performance improvements (on terms of IS success indicatorsue) and compare it with the PGP and PGA.
 
 
 \section{Methods}
 
-\subsection{Data Analysis}
+To analyze the effects of social interaction in the SPB portal we conducted a series of semi-structured interviews. Prior to these interviews, a set of questions were prepared, each question with the purpose to understand an specific aspect of the interaction and processes used by the communities that have been using the new SPB portal in their development process. 
 
-\subsubsection{Source Code}
+To choose the participants, the history of participation in the community was analyzed and the community members with greater number of recent contributions, in the past 12 months, were selected (17 participants). An invitation was sent by email to each selected individual and we received 7 positive replies. From these individuals, we were able to schedule and perform 3 interviews in the following week. The three participants were part of the same community inside the new SPB portal.
 
-\subsubsection{Issues}
+Regarding demographics, all participants were aged between 21 and 30 years and are IT professionals; two participants had 4-6 years and one 7-10 years of experience on software development; two participants had 1-3 years and one 7 or more years of experience on open source development; two participants had 1-3 years and one 4-6 years of experience on team management; and two participants had 1-2 years and one less then one year of experience on SPB development.
 
-\subsubsection{Software Downloads}
+The interviews were conducted over a video-conference system and the audio of the interviews was recorded, and relevant parts of the answers were transcribed. At the beginning of the interview, a term of consent [REFERENCE REQUIRED] was read aloud to the participant. All participation was voluntary and unpaid. Table 
 
-\subsubsection{Message Exchange}
+The questions were formulated and validated with the help of professionals of distinct areas such as social scientists, psychologists, and user interface designers.  A test interview was conducted in order to better understand the clarity of the questionnaire and to estimate the length of the interviews. After some cycles of feedback on the questions, and the results from the test interview, we arrived at a final set of 13 questions to be performed as a semi-structured interview with an estimated length of 30 minutes. 
 
-\subsection{Questionnaires}
+\subsection{Questionnaire}
+The questionnaire was divided in two sections, \textbf{social interaction} and \textbf{SPB portal}, with 10 and 3 questions respectively. The questions their research purpose are listed below:
 
+\subsubsection{Social interaction}
+
+\begin{enumerate}
+  \item How do the members of your community usually communicate?
+
+  \item About organization and planning of activities:
+  \begin{enumerate}
+    \item How does your community organize their work?
+    \item Are there planning-only activities? How do they happen?
+  \end{enumerate}
+  \item What are the types of contributions that your community receives from occasional contributors? (Code, suggestions, bug reports, documentation, etc)
+  \item What are the strategies that your community use to engage and retain contributors?
+  \item How do external contributors impact your planning for current and future work?
+  \item Are there cases of divergence among members of your community? How did the community deal with it?
+  \item What are the roles of public vs private and group vs individual communications in your community?
+  \begin{enumerate}
+    \item Do the members of your community use private communication channels? Which ones?
+    \item Are there differences between public and private communications? What are they?
+    \item How does the community use individual communications? And in groups?
+  \end{enumerate}
+  \item Are there face-to-face meetings in your community? In which occasions and with which frequency do they happen?
+  \item Are there difficulties in working virtually in your community? What are they?
+  \item How many people approximately participate in your community? Do they perform different roles? What are they?
+\end{enumerate}
+
+\subsubsection{SPB portal}
+
+\begin{enumerate}
+\item Does the SPB portal adaquetly supports your community? How so?
+\item Have you used the old SPB portal? What were its strengths and weaknesses?
+\item What are the strenghts and weaknesses of the new portal? How would you compare the old and new SPB portals?
+\end{enumerate}
+
+\subsection{Post-interview questionnaire}
+
+After the interviews were conducted, a form was sent to the participants, which contained questions to help contextualize and compartmentalize the answers given in the interview. This questionnaire contained the following questions:
+
+\begin{enumerate}
+  \item Name (open question)
+  \item Profession (open question)
+  \item Age (range)
+  \item How long have you been a software developer? (range)
+  \item How long have you been contribution to the SPB? (range)
+  \item Have you contributed with other free software projects, other than the ones in the SPB portal? If yes, for how long? (range)
+  \item Do you have experience on managing teams? For how long? (yes/no and range)
+  \item How would you describe your work and experience with SPB? (open question) 
+\end{enumerate}
+
+
+%
+%
+% Results
+%
+%
 \section{Results}
+
+As each question asked had an specific purpose in our study, we aggregated the answers to each question and analyzed the results per question. Below we summarize the answers from the participants and describe the findings that these answers have provided to our study.
+
+% Results from questions about social interaction
+\subsection{Social interaction}
+
+\subsubsection{Question 1 - on the communication among the members of the community}
+The communication channels used by the participants varies significantly depending on the context and the purpose of the communication. There is a lot of communication done inside the tools provided by the SPB portal, such as the mailing lists, the Gitlab discussions feature, but there is also a significant amount of communication done outside of the portal, such as through the use of IRC, video-conferencing software such as Google Hangouts, as well as face-to-face communications for the group of people working geographically together.
+
+One participant mentioned that usually the less experienced members of the team tend to focus their communication through one channel, while as they get more experienced, they learn to differentiate the purpose of the communication and use specific channels for that. There is a distinct progression on several dimensions of communication: cardinality, audio-vs-text and synchronicity. At the beginning, members of the team tend to ask for help through face-to-face questions or audio channels, directed towards to a single member which they trust. As they get more familiar with the other members of the team, they get more comfortable on asking questions on IRC, a text-only based mode, but one which still requires synchronous responses. It's only after they get more experienced that they accept the mailing lists as a viable channel for communication, which exposes their questions more widely and provides an asynchronous method of communication.
+
+Finally, one participant mentioned that in advanced use cases, experienced users are able to communicate directly and effectively through the specialized tools available, such as the discussions mechanisms provided by the Gitlab instance of the SPB portal:
+
+\begin{displayquote}
+\textit{``... other mechanism are used, for example: in the code, when we are discussing an specific issue, we use Gitlab itself..."} – Participant 1
+\end{displayquote}
+
+\subsubsection{Question 2 - on the organization and planning of activities}
+In the case of the community that the members we interviewed were part of, the organization and planning of activities happen through the use of agile methodologies, specifically SCRUM. [WHAT IS SCRUM]. All of the team members participate in a scheduled meeting once every 2 weeks, which aligns with the length of their task sprints. These meetings take place in the laboratory where most of the developers are located so most of these activities happen face-to-face but there are also members of the community working remotely and those participate via video-conferencing.
+
+In addition to that, once every 3 months all team members meet together (including the remote members), in order to discuss high-level themes and tasks for the upcoming months.
+
+In terms of tools to support the organization activities, this community used to use an external tracking tool, which ran outside of the SPB Portal. Since approximately 6 months, however, this community has migrated from this tool to use the task tracker provided by the portal.
+
+\subsubsection{Question 3 - on the types of contributions received by the community}
+
+All the three participants stated that most contributions that their community get are related to issue reports and feature requests, with very little code or documentation contributions. From one of the participants:
+
+\begin{displayquote}
+\textit{``At this point we don't get much external contribution yet. I believe that's because our community is relatively new. Another possible reason could be our poor documentation."} – Participant 3
+\end{displayquote}
+
+This participant also mentioned that the community is not small, so that doesn't look like an impediment to contribution. However, the complexity of their project is substantial, which makes it harder for sporadic contributors to show up and be able to effectively contribute something.
+
+\subsubsection{Question 4 - on the strategies used to engage and retain contributors}
+
+The community utilizes several methods to engage and retain contributors. The most important aspect is to keep the communication channels open, which provides the opportunities for new members to join and participate at the same level of the existing members. Another side effect of keeping the communication open is the higher visibility that that provides to their community. With that, they try to use as much as possible the correct tools available for their project, in order to correspond to the expectations that a new contributor might have. According to participant 3, side-channel communications and decisions tend to repel new contributors.
+
+The community is currently working to improve documentation in order to allow external developers to understand the software and the process the community uses.
+
+Another strategy that they use is to always keep members online on IRC which is ready to promptly ready and give feedback to someone interested in contributing with them. In the same vein, they also try to reply emails in the mailing list as quick as they can.
+
+\subsubsection{Question 5 - on the impact of external contributors on the planning of current and future work}
+
+Even though the amount of external contribution is still small, the feature requests and issue reports that they receive are promptly discussed in smaller meetings that happen through the week, and their impact on the planning depends on the priority or severity of the matter being discussed.
+
+\subsubsection{Question 6 - on the handling of divergences among members of your community}
+divergencias tecnicas
+tentar resolver problemas por email
+pontos importantes: não deixa pro irc, manda pro email
+opinioes de pessoas mais experientes tem mais peso na resolucao de conflitos
+
+
+acontece bastante, todo mundo é tranquilo.. sentar, conversar, alinhar o projeto
+não se lembra nenhum caso de uma divergencia que não foi resolvida
+
+falta de comunicacao
+
+\subsubsection{What are the roles of public vs private and group vs individual communications in your community?}
+  
+%  \begin{enumerate}
+%    \subsubsection{Do the members of your community use private communication channels? Which ones?}
+%    \subsubsection{Are there differences between public and private communications? What are they?}
+%    \subsubsection{How does the community use individual communications? And in groups?}
+%  \end{enumerate}
+  
+\subsubsection{Are there face-to-face meetings in your community? In which occasions and with which frequency do they happen?}
+
+\subsubsection{Are there difficulties in working virtually in your community? What are they?}
+
+\subsubsection{How many people approximately participate in your community? Do they perform different roles? What are they?}
+
+
+
+% Results from questions about SPB portal
+\subsection{SPB portal}
+
+\subsubsection{Does the SPB portal adequately supports your community? How so?}
+\subsubsection{Have you used the old SPB portal? What were its strengths and weaknesses?}
+\subsubsection{What are the strenghts and weaknesses of the new portal? How would you compare the old and new SPB portals?}
+
 
 \section{Discussion}
 
