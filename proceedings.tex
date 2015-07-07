@@ -71,7 +71,7 @@
 % End of preamble. Here it comes the document.
 \begin{document}
 
-\title{Integration of Coding and Social Features to Increase Success on FLOSS Projects}
+\title{Exploring the role of social interaction in an online community from the Software Público Brasileiro}
 
 \numberofauthors{3}
 \author{%
@@ -79,7 +79,7 @@
     \affaddr{University of São Paulo}\\
     \affaddr{ICMC - USP}\\
     \affaddr{São Carlos, Brazil}\\
-    \email{felipe.tassario.gomes@usp.br}}\\
+    \email{felipe.gomes@gmail.com}}\\
   \alignauthor{Sérgio O. Campos\\
     \affaddr{University of São Paulo}\\
     \affaddr{ICMC - USP}\\
@@ -102,56 +102,55 @@
 
 \section{Introduction}
 
-In this article we analyze a real-world Computer-Supported Collaborative Work (CSCW) system in order to understand the trade-offs of integrating social features in a distributed development environment of Free and Open-Source Software (FLOSS).
+In this article we analyze a real-world Computer-Supported Collaborative Work (CSCW) system in order to explore the role of social interactions in a distributed development environment of Free and Open-Source Software (FLOSS).
 
 The field of CSCW is a relatively new area of research in the greater area of computer science research. From its beginning, in the late 80s, the field has produced both academic research into the fundamental concepts of the area, as well as tools derived from this research, specifically designed to support collaborative work.
 
-With the advance of the availability, ubiquity and reach of the Internet in the last 15 years, vast opportunities to use on-line tools to perform collaborative have appeared, and the number of tools created to support distributed, synchronous or asynchronous work, through the Internet, has seen a sharp rise. There is even a strong presence of tools being developed in Brazil for these purposes, adapted to the local and national needs and requirements[CITATION NEEDED: what needs? Who says?].
+With the advance of the availability, ubiquity and reach of the Internet in the last 15 years, vast opportunities to use on-line tools to perform collaborative have appeared, and the number of tools created to support distributed, synchronous or asynchronous work, through the Internet, has seen a sharp rise. There is even a strong presence of tools being developed in Brazil for these purposes, adapted to the local and national needs and requirements.
 
-One of theses systems is the new portal for Public Free Software (``Software Público Brasileiro – SPB''), being developed by the University of Brasília (UnB), which goal is to support the activities of software development in the public sector and encourage the collaboration between communities and individuals.
+One of theses systems is the portal for Public Free Software (``\textit{Software Público Brasileiro} – SPB''), being developed by the University of Brasília (UnB), which goal is to support the activities of software development in the public sector and encourage the collaboration between communities and individuals.
 
-The new version of the Portal (nSPB) is currently in final tests phase (beta) and when released it will replace the old version (oSPB), on-line since 2007. The nSPB was completely redesigned with focusing on the integration of coding and social features. This paper compares both versions to better understand the benefits and drawbacks of this integration regarding Open-Source Information System Success \cite{Crowston2006}, Perceived Group Awareness (PGA) \cite{Strijbos2007} and Perceived Group Performance (PGP)\cite{Jung2002}.
+The SPB portal has been recently revamped and the new version replaced the old version that was on-line since 2007. The new SPB portal was designed with a focus on the integration of coding and social features. 
 
-\section{Portal do Software Público}
+\subsection{SPB - \textit{\textbf{Software Público Brasileiro}}}
 
-[EXPLAIN FEATURES OF SOFTWARE PUBLICO AND WHAT ARE THE INTRODUCED SOCIAL FEATURES]
+The Public Free Software in Brazil is a political and social movement in Brazil that started at the beginning of the previous decade and has gained traction in the political sphere of the country. It consists in a movement to use and implement free software by sectors of the government, where the economic aspect represents its stronger argument, but also brings other useful aspects that benefits society, such as the creation and generation of better software and systems to supports the population, and the creation of a technology and knowledge exchange system that is accessible to different sectors of the government and to the society in general \cite{DeFreitas2012}.
 
-\section{The Relation between Social Interaction and FLOSS Success}
+The concept of SPB is different than just FLOSS in some aspects, specially in how the ownership of a software developed as SPB is attributed as a public good to society \cite{Meirelles2015}.
 
-As any software FLOSS projects can be developed by a single individual or by a closed group (as proprietary software) but most of it is actually developed by organizationally- and geographically-distributed developers \cite{Crowston2012}, and thus it requires social interaction.
+\subsection{SPB portal}
 
-While social interaction can help teams to achieve higher level of awareness, an ``important feature'' for collaborative work \cite{Olson2000}, we also have to consider that social "distractions" can diverge users from taskwork, that is, from the task they should finally accomplish.
+Despite the differences between FLOSS and SPB there are shared features such as decentralized development and decision making processes. The SPB portal is a virtual environment designed to support and enable software development communities to interact and collaborate in SPB projects\cite{Meirelles2015}. The current version is composed by a collection of integrated free software tools:
 
-In our study we chose to use \textit{activity} and \textit{programmer productivity} indicators brought from Information Systems (IS) to FLOSS research \cite{Crowston2006}, as follow:
+\begin{itemize}
+  \item Gitlab: a software development platform supporting wiki pages, issue tracker, milestones and integrated with the version control system \textit{git};
+  \item Noosfero: a social network and CMS platform;
+  \item Mailman: a mailing list software server.
+\end{itemize}
 
-\textit{\textbf{Activity}}: number of topics, messages and authors in forum; number of authors in code repositories; number of authors and modifications (tracker).
-
-\textit{\textbf{Programmer Productivity}}: commits and lines of code in repository; completed tasks on issue tracker.
-
-
-Allied to the quantitative data surveys were also filled and returned by users. The combined use of quantitative and qualitative methods allowed us to measure team performance improvements (on terms of IS success indicatorsue) and compare it with the PGP and PGA.
-
+The tools are integrated in three aspects: visual (same user visual identity), data (search and data sharing) and authentication (single sign-on).
 
 \section{Methods}
 
-To analyze the effects of social interaction in the SPB portal we conducted a series of semi-structured interviews. Prior to these interviews, a set of questions were prepared, each question with the purpose to understand an specific aspect of the interaction and processes used by the communities that have been using the new SPB portal in their development process. 
+To analyze the effects of social interaction in the SPB portal we conducted a series of semi-structured interviews. Prior to these interviews, a set of questions were prepared, each question with the purpose to understand an specific aspect of the interaction and processes used by the communities that have been using the SPB portal in their development process. 
 
-To choose the participants, the history of participation in the community was analyzed and the community members with greater number of recent contributions, in the past 12 months, were selected (17 participants). An invitation was sent by email to each selected individual and we received 7 positive replies. From these individuals, we were able to schedule and perform 3 interviews in the following week. The three participants were part of the same community inside the new SPB portal.
+To choose the participants, the history of participation in the community was analyzed and the community members with greater number of recent contributions, in the past 12 months, were selected (17 participants). An invitation was sent by email to each selected individual and we received 7 positive replies. From these individuals, we were able to schedule and perform 3 interviews in the following week. The three participants were part of the same community inside the SPB portal.
 
 Regarding demographics, all participants were aged between 21 and 30 years and are IT professionals; two participants had 4-6 years and one 7-10 years of experience on software development; two participants had 1-3 years and one 7 or more years of experience on open source development; two participants had 1-3 years and one 4-6 years of experience on team management; and two participants had 1-2 years and one less then one year of experience on SPB development.
 
-The interviews were conducted over a video-conference system and the audio of the interviews was recorded, and relevant parts of the answers were transcribed. At the beginning of the interview, a term of consent [REFERENCE REQUIRED] was read aloud to the participant. All participation was voluntary and unpaid. Table 
+The interviews were conducted over a video-conference system and the audio of the interviews was recorded, and relevant parts of the answers were transcribed. At the beginning of the interview, a term of consent \cite{usability.gov_2015} was read aloud to the participant. All participation was voluntary and unpaid. Table 
 
-The questions were formulated and validated with the help of professionals of distinct areas such as social scientists, psychologists, and user interface designers.  A test interview was conducted in order to better understand the clarity of the questionnaire and to estimate the length of the interviews. After some cycles of feedback on the questions, and the results from the test interview, we arrived at a final set of 13 questions to be performed as a semi-structured interview with an estimated length of 30 minutes. 
+The questions were formulated and validated with the help of professionals of distinct areas such as social scientists, psychologists, and user interface designers.  A test interview was conducted in order to better understand the clarity of the questionnaire and to estimate the length of the interviews. After some cycles of feedback on the questions, and the results from the test interview, we arrived at a final set of 10 questions to be performed as a semi-structured interview with an estimated length of 30 minutes. 
 
 \subsection{Questionnaire}
 The questionnaire is composed by 10 questions which are listed in this section.
 
 \subsubsection{Social interaction}
 
-\begin{enumerate}
-  \item How do the members of your community usually communicate?
 
+\begin{enumerate}
+  \item How many people approximately participate in your community? Do they perform different roles? What are they?
+  \item How do the members of your community usually communicate?
   \item About organization and planning of activities:
   \begin{enumerate}
     \item How does your community organize their work?
@@ -169,7 +168,6 @@ The questionnaire is composed by 10 questions which are listed in this section.
   \end{enumerate}
   \item Are there face-to-face meetings in your community? In which occasions and with which frequency do they happen?
   \item Are there difficulties in working virtually in your community? What are they?
-  \item How many people approximately participate in your community? Do they perform different roles? What are they?
 \end{enumerate}
 
 
@@ -201,7 +199,14 @@ As each question asked had an specific purpose in our study, we aggregated the a
 % Results from questions about social interaction
 \subsection{Social interaction}
 
-\subsubsection{Question 1 - on the communication among the members of the community}
+\subsubsection{Question 1 - on the people in the community and their roles}
+
+There are around 40 people involved in the community that our participants were interviewed. One participant detailed a breakdown of about 20 to 25 people working on the technical aspects of the project, and the other 15 to 20 people working on the project leadership, governance, marketing, and other daily tasks.
+
+The technical team is comprised of developers in several levels of experience. But there are some roles in the technical team that are not fixed, and are rotated from time to time. One example of this is the role of the coach, which is one team member assigned to be on top of everything that the team is doing, to keep the wiki and documentation updated, to keep track of the tasks to be performed, and to report the team progress to the larger community and to the non-technical members of the team.
+
+
+\subsubsection{Question 2 - on the communication among the members of the community}
 The communication channels used by the participants varies significantly depending on the context and the purpose of the communication. There is a lot of communication done inside the tools provided by the SPB portal, such as the mailing lists, the Gitlab discussions feature, but there is also a significant amount of communication done outside of the portal, such as through the use of IRC, video-conferencing software such as Google Hangouts, as well as face-to-face communications for the group of people working geographically together.
 
 One participant mentioned that usually the less experienced members of the team tend to focus their communication through one channel, while as they get more experienced, they learn to differentiate the purpose of the communication and use specific channels for that. There is a distinct progression on several dimensions of communication: cardinality, audio-vs-text and synchronicity. At the beginning, members of the team tend to ask for help through face-to-face questions or audio channels, directed towards to a single member which they trust. As they get more familiar with the other members of the team, they get more comfortable on asking questions on IRC, a text-only based mode, but one which still requires synchronous responses. It's only after they get more experienced that they accept the mailing lists as a viable channel for communication, which exposes their questions more widely and provides an asynchronous method of communication.
@@ -212,14 +217,14 @@ Finally, one participant mentioned that in advanced use cases, experienced users
 \textit{``... other mechanism are used, for example: in the code, when we are discussing an specific issue, we use Gitlab itself..."} – Participant 1
 \end{displayquote}
 
-\subsubsection{Question 2 - on the organization and planning of activities}
-In the case of the community that the members we interviewed were part of, the organization and planning of activities happen through the use of agile methodologies, specifically SCRUM. [WHAT IS SCRUM]. All of the team members participate in a scheduled meeting once every 2 weeks, which aligns with the length of their task sprints. These meetings take place in the laboratory where most of the developers are located so most of these activities happen face-to-face but there are also members of the community working remotely and those participate via video-conferencing.
+\subsubsection{Question 3 - on the organization and planning of activities}
+In the case of the community that the members we interviewed were part of, the organization and planning of activities happen through the use of agile methodologies, specifically SCRUM – a software development method which the goal is to deliver as much quality software as possible within a series of short time-boxes (fixed time intervals) called sprint \cite{Beedle1999}. All of the team members participate in a scheduled meeting once every 2 weeks, which aligns with the length of their task sprints. These meetings take place in the laboratory where most of the developers are located so most of these activities happen face-to-face but there are also members of the community working remotely and those participate via video-conferencing.
 
 In addition to that, once every 3 months all team members meet together (including the remote members), in order to discuss high-level themes and tasks for the upcoming months.
 
-In terms of tools to support the organization activities, this community used to use an external tracking tool, which ran outside of the SPB Portal. Since approximately 6 months, however, this community has migrated from this tool to use the task tracker provided by the portal.
+In terms of tools to support the organization activities, this community used to use an external tracking tool, which ran outside of the SPB portal. Since approximately 6 months, however, this community has migrated from this tool to use the task tracker provided by the portal.
 
-\subsubsection{Question 3 - on the types of contributions received by the community}
+\subsubsection{Question 4 - on the types of contributions received by the community}
 
 All the three participants stated that most contributions that their community get are related to issue reports and feature requests, with very little code or documentation contributions. From one of the participants:
 
@@ -229,7 +234,7 @@ All the three participants stated that most contributions that their community g
 
 This participant also mentioned that the community is not small, so that doesn't look like an impediment to contribution. However, the complexity of their project is substantial, which makes it harder for sporadic contributors to show up and be able to effectively contribute something.
 
-\subsubsection{Question 4 - on the strategies used to engage and retain contributors}
+\subsubsection{Question 5 - on the strategies used to engage and retain contributors}
 
 The community utilizes several methods to engage and retain contributors. The most important aspect is to keep the communication channels open, which provides the opportunities for new members to join and participate at the same level of the existing members. Another side effect of keeping the communication open is the higher visibility that that provides to their community. With that, they try to use as much as possible the correct tools available for their project, in order to correspond to the expectations that a new contributor might have. According to participant 3, side-channel communications and decisions tend to repel new contributors.
 
@@ -237,11 +242,11 @@ The community is currently working to improve documentation in order to allow ex
 
 Another strategy that they use is to always keep members online on IRC which is ready to promptly ready and give feedback to someone interested in contributing with them. In the same vein, they also try to reply emails in the mailing list as quick as they can.
 
-\subsubsection{Question 5 - on the impact of external contributors on the planning of current and future work}
+\subsubsection{Question 6 - on the impact of external contributors on the planning of current and future work}
 
 Even though the amount of external contribution is still small, the feature requests and issue reports that they receive are promptly discussed in smaller meetings that happen through the week, and their impact on the planning depends on the priority or severity of the matter being discussed.
 
-\subsubsection{Question 6 - on the handling of divergences among members of your community}
+\subsubsection{Question 7 - on the handling of divergences among members of your community}
 Two of the participants mentioned that most of the divergences that happen in the community are technical in nature: they are questions about the technical aspects of their project that members do not agree on how to approach or solve. When this happen, they try to enter into a "conflict-solving" mode, in which the discussions are moved to the mailing list to provide high visibility and give a chance for everyone to opine. They mention that this mode usually tends to give a fresh air on the situation, and that the opinion of the more experienced members of the community tend to have a high weight on the conflict resolution.
 
 The 3rd participant also mentioned about personal divergences and how that is solved differently, through the use of private emails. He also mentioned that often times, an apparent divergence is in the air because members are having trouble understanding what each other is saying.
@@ -250,7 +255,7 @@ The 3rd participant also mentioned about personal divergences and how that is so
 \textit{``Sometimes, we can go through 1 or 2 weeks of discussions because members don't realize that there's no disagreement between them, and they are actually saying the same thing."} – Participant 3
 \end{displayquote}
 
-\subsubsection{Question 7 - on the roles of public vs private and group vs individual communications}
+\subsubsection{Question 8 - on the roles of public vs private and group vs individual communications}
 
 There is no formal alignment about when communication must be private-public or group-individual within the community, but in practice it occurs in all combinations of these dimensions. The choice of means of communication is done on a case-by-case basis, and vary between individual views and preferences. All participants mentioned that they tend to use a "default to open" approach, where the usage of private or individual channels happen only when there's a compelling reason to do so; otherwise it happens publicly. However, this may not be true of other members of this community.
 
@@ -264,7 +269,7 @@ Another interesting point is the existence of public individual communications, 
 
 One participant also mentioned that a limiting factor of making all communications public in their community is the political aspect of the software being developed. That might be the case for other SPB projects since all of them are inserted into the political context.
 
-\subsubsection{Question 8 - on face-to-face meetings}
+\subsubsection{Question 9 - on face-to-face meetings}
 
 The community interviewed has a significant amount of face-to-face meetings due to the fact that various team members are geographically located together and work from the same office. Even then, there are some community members working remotely, both the software developers and political leaders of the project.
 
@@ -272,7 +277,7 @@ To include everyone working remotely and co-located, there is a whole-team meeti
 
 One participant mentioned that it appears that the relationships among members tend to deteriorate over time, and the number of disagreements increase as time passes. These face-to-face meetings and recreational activities are a good venue to fix some of these disagreements and they seem to improve the overall team unity.
 
-\subsubsection{Question 9 - on the difficulties in working virtually}
+\subsubsection{Question 10 - on the difficulties in working virtually}
 
 Two of the participants noticed difficulties in working virtually but one of them did not. One of the aspects mentioned was that working remotely requires more discipline. Some participants also stated that text communication is harder than face-to-face; video-conference helps but does not solve it completely. Two participants also mentioned that currently the team is mature enough to accomplish work in a distributed manner but that was not always the case. 
 
@@ -282,12 +287,6 @@ Another point raised by one participant is that some of the tasks performed by t
 \textit{``What enables us to work in this manner is that each member feel as part of a community and understand that what we are doing depend on them. If each one commits to their responsibilities, it doesn't matter if they are remote or not."} – Participant 2
 \end{displayquote}
 
-\subsubsection{Question 10 - on the people in the community and their roles}
-
-There are around 40 people involved in the community that our participants were interviewed. One participant detailed a breakdown of about 20 to 25 people working on the technical aspects of the project, and the other 15 to 20 people working on the project leadership, governance, marketing, and other daily tasks.
-
-The technical team is comprised of developers in several levels of experience. But there are some roles in the technical team that are not fixed, and are rotated from time to time. One example of this is the role of the coach, which is one team member assigned to be on top of everything that the team is doing, to keep the wiki and documentation updated, to keep track of the tasks to be performed, and to report the team progress to the larger community and to the non-technical members of the team.
-
 \section{Discussion}
 
 With these interviews, we observed several aspects of the social interactions and behaviors in an online community working in the SPB portal. There is a high variation in the communication channels used in this online community, and the choice of usage depends not only on the situation and the message to be sent, but also on the level of experience and comfort of the people involved, and also on personal culture and views. The public communication channels are used frequently and  intentionally, with the goal of increasing visibility and participation in the discussions, and also to engage and retain contributors to the project. However, there are still occasions in which private or individual communications might be preferred, for a variety of reasons, including conflict solving or avoiding distractions.
@@ -296,7 +295,7 @@ Even though the portal offers communication tools, there's still a high volume o
 
 The communications regarding the tasks and the technical aspects of the work performed fits well into asynchronous communications mechanisms; however, most of the decision making occurs through synchronous methods, specially on face-to-face meetings through this community's agile development process. 
 
-The studied community seems to not have a reasonable amount of external contributions, perhaps because of the lack of documentation (as stated by one of the participants) or perhaps due to the complexity of their software. As the volume of contributions is low these contributions does not affect their current or future work planning. An interesting perspective is that most of SPB developers are government employees, so individuals are no inclined to collaborate unless the departments they work for tell them to do so. Perhaps in the realm of SPB, the efforts for collaboration and engagement should be focused in the department level, as opposed to the level of individuals, which is the case with traditional free software communities. Further research in this area would be invaluable to understand this phenomenon. 
+The studied community seems to not have a reasonable amount of external contributions, perhaps because of the lack of documentation (as stated by one of the participants) or perhaps due to the complexity of their software. As the volume of contributions is low these contributions does not affect their current or future work planning.
 
 On the subject of divergences, the majority of situations on this community arise from technical divergences, which is usually resolved without remaining issues by using a methodical approach. The participants mentioned that, whenever this happens, they tend to move discussions to the mailing list (their most open and visible communication channel), in order to take advantage of its asynchronicity and openness. By allowing the arguments to be visible to everyone, a discussion can reach a more sensible and even-tempered level, while the need to thoroughly express opinions in e-mail form allow people time to think and reason about the problem and its viable solutions. Another benefit of moving the discussion to the mailing list is to get the input of the more experienced members of the team. Their opinion is highly respected and usually ends up being the tie-breaker to solve a conflict.
 
@@ -313,15 +312,19 @@ The interviewed participants did not seem to give importance to the roles in the
 
 \section{Conclusion}
 
+With this study, we have analyzed the behavior and importance of social interactions in a community of free software development for the SPB portal. The results have showed us that the social interactions within the community play a major role in its healthy working, and that a fine balance of communication channels and methods happen implicitly in a way that is not easily captured by a single tool or even a set of tools designed to do that. Moreover, cultural aspects of the community and the individual members involved play a significant role on how the community as a whole communicate.
 
+In addition to that, other factors outside of the communication itself play a role in the community, such as the maturity level of the community, and how conflict solving is approached, defined and methodically followed.
+
+Other interesting observation is how the presence of remote and non-remote members at one community may affect the motivation and effectiveness of the remote members, and how all team members must be prepared and willing to follow rules in order to keep these members engaged and included.
+
+We've seen that the factor of being open is not a guarantee that a community will receive external contributions: in order to do that it needs to actively work towards enabling these contributions, and it needs to do so in various aspects, from things such as inclusion of external contributors in the planning and decision-making processes, maintenance of documentation, etc. Even then, personal motivations and interests will influence the amount of contributions that a project may receive.
+
+Finally, an interesting perspective is that most of SPB developers are government employees, so individuals are not inclined to collaborate unless the departments they work for tell them to do so. Perhaps in the realm of SPB, the efforts for collaboration and engagement should be focused in the department level, as opposed to the level of individuals, which is the case with traditional free software communities. Further research in this area would be invaluable to understand this phenomenon. 
 
 \section{Acknowledgments}
 
-We thank all the interviewed participants, who agreed to dedicate their time to participate in our interview and answer the post-interview questionnaire. We also thank the people who helped us design, validate and test our questions, as well as the professors who provi, and all publications support
-and staff, who wrote and provided helpful comments on previous
-versions of this document. Authors 1, 2, and 3 gratefully acknowledge
-the grant from NSF (\#1234--2012--ABC). \textit{This whole paragraph is
-  just an example.}
+We thank all the interviewed participants, who agreed to dedicate their time to participate in our interview and answer the post-interview questionnaire. We also thank the people who helped us design, validate and test our questions, as well as the professors who provided advice and guidance on our object of study and methodology to be used.
 
 
 % Balancing columns in a ref list is a bit of a pain because you
